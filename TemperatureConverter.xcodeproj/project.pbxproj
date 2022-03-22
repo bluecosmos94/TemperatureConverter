@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF9F686227EA32210056301A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F686127EA32210056301A /* ResultViewController.swift */; };
 		EFA1114F27EA2BD2002BFDA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA1114E27EA2BD2002BFDA5 /* AppDelegate.swift */; };
 		EFA1115127EA2BD2002BFDA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA1115027EA2BD2002BFDA5 /* SceneDelegate.swift */; };
 		EFA1115327EA2BD2002BFDA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA1115227EA2BD2002BFDA5 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF9F686127EA32210056301A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		EFA1114B27EA2BD2002BFDA5 /* TemperatureConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA1114E27EA2BD2002BFDA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA1115027EA2BD2002BFDA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				EFA1115727EA2BD3002BFDA5 /* Assets.xcassets */,
 				EFA1115927EA2BD3002BFDA5 /* LaunchScreen.storyboard */,
 				EFA1115C27EA2BD4002BFDA5 /* Info.plist */,
+				EF9F686127EA32210056301A /* ResultViewController.swift */,
 			);
 			path = TemperatureConverter;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				EFA1115327EA2BD2002BFDA5 /* ViewController.swift in Sources */,
 				EFA1114F27EA2BD2002BFDA5 /* AppDelegate.swift in Sources */,
 				EFA1115127EA2BD2002BFDA5 /* SceneDelegate.swift in Sources */,
+				EF9F686227EA32210056301A /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
