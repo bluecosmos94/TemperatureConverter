@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     let kelvinConstant: Double = 273 // Rounded to 273, actual is 273.15; equals to 0 degree celcius
     var convertedVal: Double = 0
     
+    @IBOutlet weak var tempTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -35,6 +37,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func convertTemp(_ sender: Any) {
+        
     }
 }
 
