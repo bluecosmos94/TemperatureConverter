@@ -49,6 +49,7 @@
                     </view>
                     <connections>
                         <outlet property="tempTextField" destination="OAJ-Ie-7tz" id="v85-gE-h4H"/>
+                        <outlet property="tempUnitPickerView" destination="FUJ-iw-rIz" id="XkE-fC-n7C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

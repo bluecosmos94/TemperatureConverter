@@ -12,14 +12,11 @@ class ViewController: UIViewController {
     let fahrenheitRatio: Double = 9/5 // C to F ratio
     let kelvinConstant: Double = 273 // Rounded to 273, actual is 273.15; equals to 0 degree celcius
     var convertedVal: Double = 0
+    let degreeUnits: [String] = ["Celcius", "Fahrenheit", "Kelvin"]
     
     @IBOutlet weak var tempTextField: UITextField!
+    @IBOutlet weak var tempUnitPickerView: UIPickerView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
     func celcToFahr(c: Double) -> Double{
         return (fahrenheitRatio * c) + 32
     }
@@ -36,8 +33,28 @@ class ViewController: UIViewController {
         return kelvinConstant - k
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tempUnitPickerView.dataSource = self
+        tempUnitPickerView.delegate = self
+    }
+    
     @IBAction func convertTemp(_ sender: Any) {
         
     }
 }
 
+extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return degreeUnits.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return degreeUnits[row]
+    }
+    
+}
