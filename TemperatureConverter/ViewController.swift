@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     let degreeUnits: [String] = ["Celcius", "Fahrenheit", "Kelvin"]
     
     @IBOutlet weak var tempTextField: UITextField!
-    @IBOutlet weak var tempUnitPickerView: UIPickerView!
+    @IBOutlet weak var currentTempUnitButton: UIButton!
     
     func celcToFahr(c: Double) -> Double{
         return (fahrenheitRatio * c) + 32
@@ -35,8 +35,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tempUnitPickerView.dataSource = self
-        tempUnitPickerView.delegate = self
+        
     }
     
     @IBAction func convertTemp(_ sender: Any) {
