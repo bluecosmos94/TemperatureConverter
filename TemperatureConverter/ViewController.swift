@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     let degreeUnits: [String] = ["Celcius", "Fahrenheit", "Kelvin"]
     
     @IBOutlet weak var tempTextField: UITextField!
-    @IBOutlet weak var currentTempUnitButton: UIButton!
     
     func celcToFahr(c: Double) -> Double{
         return (fahrenheitRatio * c) + 32
