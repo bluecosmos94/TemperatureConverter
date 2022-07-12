@@ -8,14 +8,16 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
-    @IBOutlet weak var currentTemp: UILabel!
-    @IBOutlet weak var convertedTemp: UILabel!
+    var currentTemp: String = ""
+    var convertedTemp: String = ""
+    
+    @IBOutlet weak var currentTempLabel: UILabel!
+    @IBOutlet weak var convertedTempLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        currentTempLabel.text = currentTemp
+        convertedTempLabel.text = convertedTemp
     }
     
 
