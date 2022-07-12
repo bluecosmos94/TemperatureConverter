@@ -9,6 +9,9 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var currentTemp: UILabel!
+    @IBOutlet weak var convertedTemp: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
