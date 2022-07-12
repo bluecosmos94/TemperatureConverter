@@ -35,7 +35,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tempPickerView.delegate = self
+        self.tempPickerView.dataSource = self
     }
     
     @IBAction func convertTemp(_ sender: Any) {
